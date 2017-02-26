@@ -1,3 +1,9 @@
+"""Contains code basic implementation of GAN modeling a Gaussian.
+
+- This is the basic version which is imperfect.
+- The next versions in another file will aim to improve this model.
+- Learning rate decay doesn't seem to work.
+"""
 from pprint import pprint
 
 import matplotlib.pyplot as plt
