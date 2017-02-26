@@ -1,4 +1,4 @@
-name: gantf
+name: tfenv
 channels: !!python/tuple
 - defaults
 dependencies:
@@ -17,8 +17,9 @@ dependencies:
 - pandas
 - matplotlib
 - seaborn
+- scikit-learn
 - jupyter
 - pip:
   - future==0.16.0
   - tensorflow-gpu
-prefix: /home/nitred/anaconda3/envs/gantf
+prefix: /home/nitred/anaconda3/envs/tfenv
