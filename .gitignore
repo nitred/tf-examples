@@ -3,3 +3,4 @@
 /revision
 /repos
 /MNIST_DATA
+*__pycache__
