@@ -57,7 +57,7 @@ learning_rate = tf.train.exponential_decay(decay_rate=0.8, decay_steps=100,
                                            global_step=tf.Variable(0), learning_rate=0.5)
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate)
 
-vars_XOR = tf.get_collection(tf.GraphKeys.)
+vars_XOR = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="XOR")
 opt_XOR = optimizer.minimize(loss_XOR, var_list=vars_XOR)
 
 sess = tf.Session()
