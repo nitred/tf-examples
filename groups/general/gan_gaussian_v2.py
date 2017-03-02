@@ -6,11 +6,12 @@
 """
 from pprint import pprint
 
-import matplotlib.pyplot as plt
 import numpy as np
+import tensorflow as tf
+
+import matplotlib.pyplot as plt
 import scipy as sp
 import seaborn as sns
-import tensorflow as tf
 
 # DATA
 Z_DIM = 2
@@ -172,7 +173,7 @@ for i in range(epochs_train):
         sess.run([loss_d, opt_d], feed_dict={x: x_train, z: z_train})
     # train generator
     z_train = sample_z(batch_size)
-    sess.run([loss_g, opt_g], feed_dict={z: z_train})
+    sess.run([opt_g], feed_dict={z: z_train})
 
     if i % 200 == 0:
         print("Epoch: {}, Batch Index: {}, Learning Rate: {}".format(i,
