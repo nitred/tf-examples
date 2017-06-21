@@ -22,4 +22,5 @@ dependencies:
 - pip:
   - future==0.16.0
   - tensorflow-gpu
+  - keras
 prefix:
